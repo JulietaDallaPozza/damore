@@ -19,10 +19,11 @@ const app = express();
 require("./config")(app);
 
 // default value for title local
-const capitalize = require("./utils/capitalize");
-const projectName = "damore";
+//const capitalize = require("./utils/capitalize");
 
-app.locals.damore = `${capitalize(projectName)} created with IronLauncher`;
+const projectName = "d'amore - date planner";
+
+app.locals.damore = `${projectName}`;
 
 // 👇 Start handling routes here
 const indexRoutes = require("./routes/index.routes");
