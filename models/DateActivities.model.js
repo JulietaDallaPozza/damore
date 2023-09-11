@@ -15,7 +15,7 @@ const dateActivitySchema = new Schema(
       lowercase: true,
       trim: true
     },
-    paszsword: {
+    z: {
       type: String,
       required: true
     }
